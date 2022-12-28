@@ -28,6 +28,11 @@
        <div v-else>Nenhum usuario com nome Marcello.
 
        </div>
+    
+       <ul>
+            <li v-for="(item, index) in linguaguens" > {{ index }} - {{ item.nome }} </li>
+       </ul>
+
 
 
     </div>
@@ -45,7 +50,14 @@
                 id: 1,
                 nome: "Marcello",
                 profissao: "TI"
-            }
+            },
+            linguaguens: [
+                {nome: "JavaScript"},
+                {nome: "PHP"},
+                {nome: "C#"},
+                {nome: "Java"},
+                {nome: "Python"},
+            ]
 
 
         }   
